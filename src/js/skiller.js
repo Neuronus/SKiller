@@ -11,8 +11,10 @@ $().ready(function(){
 
 
 (function($) {
-	$.fn.SKiller = function( options ) {
+	"use strict";
 	
+	$.fn.SKiller = function( options ) {
+		
 		// default settings
 		var settings = $.extend({
 			type			: null,
