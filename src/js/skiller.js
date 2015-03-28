@@ -25,6 +25,9 @@ $().ready(function(){
 
         return this.each( function() {
 			
+			
+			
+			// Execute user function after animation complete
 			if ( $.isFunction( settings.complete ) ) {
         		settings.complete.call( this );
     		} 
