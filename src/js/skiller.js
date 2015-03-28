@@ -4,6 +4,7 @@
  * 
  */
 
-$(function(){
-		
+$().ready(function(){
+	var $skillers = $(document).find('.skiller-container');
+	
 });
