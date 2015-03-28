@@ -15,12 +15,12 @@ $().ready(function(){
 
         // default settings
         var settings = $.extend({
-        	type			: null,
-        	speed			: 500,
-            color			: null,
-            innerBorder		: null,
-            outerBorder		: null,
-            complete		: null            
+			type			: null,
+			speed			: 500,
+			color			: null,
+			innerBorder		: null,
+			outerBorder		: null,
+			complete		: null            
         }, options);
 
         return this.each( function() {
