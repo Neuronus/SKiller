@@ -1,0 +1,80 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: tahoma;
+	margin: 0px;
+	
+	position: relative;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+background: #d2ff52; /* Old browsers */
+background: -moz-linear-gradient(top, #d2ff52 0%, #91e842 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2ff52), color-stop(100%,#91e842)) fixed; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d2ff52 0%,#91e842 100%) fixed; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d2ff52 0%,#91e842 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d2ff52 0%,#91e842 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d2ff52 0%,#91e842 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+}
+
+
+.skills {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.skills > div {
+	
+}
+
+
+.skill {
+	margin: 10px;
+	padding: 10px;
+}
+
+.skill h4 {
+	margin: 5px;
+	
+}
+
+.skill div {
+	
+	
+}
+.skill-bar-border {
+	width: 200px;
+	height: 24px;
+	padding: 2px;	
+	border: 1px gray solid;
+	background: #efefef;
+}
+
+.skill-bar {
+	width: 0px;
+	height: 100%;
+	background: #993384;
+	background: #cedce7; /* Old browsers */
+background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #cedce7 0%,#596a72 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #cedce7 0%,#596a72 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #cedce7 0%,#596a72 100%); /* IE10+ */
+background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	
+}
+
+.skill-bar span {
+	position: relative;
+	top: 20px;
+	border: solid 1px black;
+}
