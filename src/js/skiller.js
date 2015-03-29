@@ -15,6 +15,7 @@
 			type			: null,
 			speed			: 500,
 			color			: null,
+			fade			: false,
 			innerBorder		: null,
 			outerBorder		: null,
 			complete		: null            
@@ -29,14 +30,21 @@
 				var percent = $(this).attr('data-lvl');
 				$(this).addClass('skill');
 				$(this).find(':first')
+				.append(': '+percent+'%')
 					.after('<div class="skill-bar-border"><div class="skill-bar"></div></div>')
 				var $skillBar = $(this).find('.skill-bar'); 
 				var $barBorder = $(this).find('.skill-bar-border'); 
 				var pr = (($barBorder.width())*percent)/100;
 				
+				$skillBar.hide();
+				
 				if (settings.type == 1) 
-				$skillBar.html(percent+'%')
-				$skillBar.animate({'width': pr+'px'}, settings.speed);
+					$skillBar.html('<span>'+percent+'%</span>')
+					.show('fade', settings.speed)
+					
+					.animate({'width': pr+'px'}, settings.speed)
+					.dequeue();
+					
 						
 			});		
 			
