@@ -27,7 +27,7 @@
 			var $skillBars = $(this).find('> div'); 
 			
 			$skillBars.each(function(){
-				var percent = $(this).attr('data-lvl');
+				var percent = $(this).data('lvl');
 				$(this).addClass('skill');
 				$(this).find(':first')
 				.append(': '+percent+'%')
